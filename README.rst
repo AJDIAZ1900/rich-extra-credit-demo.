@@ -1,18 +1,20 @@
-Rich (Python) — Extra Credit Demo
-=================================
+
+Emoji (Python) — Extra Credit Demo
+==================================
 
 What this is
 ------------
-A tiny demo of the `rich` module for prettier console output (colors, tables, progress bars).
+A tiny demo of the ``emoji`` module for adding emoji to Python output and converting shortcodes
+like ``:fire:`` into real emoji 🔥.
 
 Why I chose it
 --------------
-It’s beginner-friendly, not in the standard library, and instantly makes CLI output easier to read.
+It’s not in the standard library, installs in one command, and makes CLI output more expressive
+and user-friendly in seconds.
 
 Install
 -------
-Requires Python 3.  
-Create a virtual environment (recommended):
+Requires Python 3.
 
 .. code-block:: bash
 
@@ -20,48 +22,33 @@ Create a virtual environment (recommended):
    source .venv/bin/activate
    pip install -r requirements.txt
 
-If you don't want a venv:
-
-.. code-block:: bash
-
-   pip install -r requirements.txt
-
 Run the examples
 ----------------
-Basic styled text:
+Basic prints:
 
 .. code-block:: bash
 
-   python app.py
+   python hello_emoji.py
 
-Table demo:
-
-.. code-block:: bash
-
-   python table_demo.py
-
-Progress bar:
+Shortcodes → emoji:
 
 .. code-block:: bash
 
-   python progress_demo.py
+   python emojize_demo.py
+
+Flags & skin tones:
+
+.. code-block:: bash
+
+   python extras_demo.py
 
 Uninstall (optional)
 --------------------
-If you used a venv, just deactivate and delete the folder:
-
 .. code-block:: bash
 
-   deactivate
-   rm -rf .venv
-
-If you installed globally and want to remove it:
-
-.. code-block:: bash
-
-   pip uninstall rich
+   pip uninstall emoji
 
 Notes
 -----
-- This module is NOT part of the standard library.
+- This module is NOT part of the Python standard library.
 - Tested on macOS with Python 3.
